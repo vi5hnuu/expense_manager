@@ -1,0 +1,14 @@
+.new-expense {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: rgb(103, 145, 251);
+  width: 90%;
+  /* min-width: 90%; */
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 518px) {
+  .new-expense {
+    width: 98%;
+  }
+}

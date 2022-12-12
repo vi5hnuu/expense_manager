@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-expense__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.new-expense__control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-expense__control label {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-family: monospace;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  flex: 1 1;
+}
+.new-expense__control input {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  flex: 4 1;
+  margin-right: 3rem;
+}
+.new-expense__control input:focus {
+  outline: none;
+  border-bottom: 3px solid rgb(7, 241, 54);
+}
+
+.new-expense__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+.new-expense__actions button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  transition: all 1s;
+}
+
+.new-expense__actions button:hover {
+  background-color: rgb(188, 246, 180);
+}
+
+@media (max-width: 518px) {
+  .new-expense__control input {
+    margin-right: 0;
+    flex: 3 1;
+    padding: 0.25rem 0.5rem;
+  }
+  .new-expense__control label {
+    font-size: 1rem;
+  }
+  .new-expense__actions {
+    margin-right: 0;
+  }
+}

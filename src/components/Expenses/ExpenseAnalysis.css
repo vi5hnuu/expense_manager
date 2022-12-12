@@ -1,0 +1,68 @@
+.chart {
+  width: 90%;
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+.chart__actions {
+  display: flex;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.chart__actions > select {
+  border-radius: 5px;
+  padding: 0.3rem 1.5rem;
+  outline-color: #0f0;
+}
+
+.chart__actions > label {
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.bars {
+  display: grid;
+  width: 100%;
+  column-gap: 0.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+.bar {
+  background-color: rgb(160, 185, 249);
+  width: 50%;
+  height: 10rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fill {
+  border-radius: 50px;
+  width: 100%;
+  height: 45%;
+  background-color: rgb(78, 125, 245);
+}
+
+@media (max-width: 518px) {
+  .chart {
+    width: 98%;
+  }
+  .bar {
+    height: 4.5rem;
+  }
+  .chart__actions {
+    padding: 0.25rem 1rem;
+  }
+  .chart__actions > select {
+    padding: 0.1rem 1rem;
+  }
+
+  .chart__actions > label {
+    font-size: 1rem;
+  }
+}
